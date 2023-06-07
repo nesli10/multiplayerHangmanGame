@@ -58,8 +58,6 @@ const socket = async (req: NextApiRequest, res: any) => {
           //console.log(socket.adapter.rooms); //odalar
           //console.log(socket.adapter.rooms.get(room)?.size);
           // console.log(socket.nsp.sockets); //bağlı kullanıcılar
-          const random = Math.floor(Math.random() * 9000 + 1000);
-          username = username + "#" + random;
           socket.data = { username, score: 0, room, isWait }; //user dataları
           if (socket.adapter.rooms.get(room)?.size == 2) {
             const word = generateWord();
