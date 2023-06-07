@@ -1,1 +1,1 @@
-socket.io kullanılarak multiplayer adam asmaca oyunu.
+next.js socket.io kullanılarak multiplayer adam asmaca oyunu.
