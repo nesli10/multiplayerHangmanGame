@@ -17,6 +17,7 @@ const Game = () => {
   const [opponentUsername, setOpponentUsername] = useState("");
   const [opponentScore, setOpponentScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
+  const [buttonDisabled, setButtonDisabled] = useState(false);
 
   const handleUsernameChange = (event: any) => {
     setUsername(event.target.value);
@@ -35,6 +36,7 @@ const Game = () => {
 
     socket.emit("joinRoom", { username }, (success: boolean) => {
       if (success) {
+        setButtonDisabled(true);
         setWaitingForSecondPlayer(true);
         setSocket(socket);
       } else {
@@ -196,6 +198,7 @@ const Game = () => {
             style={{ margin: "15px" }}
             variant="contained"
             onClick={joinRoom}
+            disabled={buttonDisabled}
           >
             Join Room
           </Button>
