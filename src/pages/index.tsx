@@ -91,7 +91,6 @@ const Game = () => {
       event.currentTarget.setAttribute("founded", "founded");
       setScore(updatedScore);
     } else {
-      updatedScore -= 10;
       updatedAttempts -= 1;
       setRemainingAttempts(updatedAttempts);
       setScore(updatedScore);
