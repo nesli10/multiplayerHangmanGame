@@ -54,7 +54,7 @@ const Game = () => {
         opponent: string;
       }) => {
         setRoom(room);
-        console.log(word, { opponent, room });
+        //console.log(word, { opponent, room });
         setGameStarted(true);
         setWaitingForSecondPlayer(false);
         setWord(word.toLowerCase());
