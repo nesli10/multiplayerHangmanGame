@@ -2,6 +2,7 @@ import { NextApiRequest } from "next";
 import { Server as ServerIO } from "socket.io";
 import wordsData from "words.json";
 
+/*test*/
 export const config = {
   api: {
     bodyParser: false,
