@@ -107,6 +107,7 @@
   }
   .opponent {
     margin-left: 20rem;
+    bottom: 4rem;
     font-size: 12px;
     position: relative;
   }
