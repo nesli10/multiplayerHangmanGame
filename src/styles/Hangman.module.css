@@ -36,6 +36,18 @@
   padding-top: 4px;
   width: 100px;
 }
+@media screen and (max-width: 859px) {
+  .restart_button {
+    margin-left: 0.5rem;
+  }
+  .hangman_container {
+    margin-left: 4rem;
+  }
+  .word_display {
+    margin-left: 3rem;
+  }
+}
+
 .restart_button:hover {
   background-color: #fb7c0d;
 }
@@ -73,12 +85,29 @@
   background-color: #50cbdb;
 }
 
-.score {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
 .remaining_attempts {
   color: red;
   font-weight: bold;
   font-size: 1.2rem;
+}
+.user {
+  margin-right: 40rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.opponent {
+  margin-left: 40rem;
+  position: relative;
+  bottom: 5.6rem;
+}
+@media screen and (max-width: 859px) {
+  .user {
+    margin-right: 20rem;
+    font-size: 12px;
+  }
+  .opponent {
+    margin-left: 20rem;
+    font-size: 12px;
+    position: relative;
+  }
 }

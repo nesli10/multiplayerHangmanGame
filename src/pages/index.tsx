@@ -207,17 +207,11 @@ const Game = () => {
         </div>
       ) : (
         <div>
-          <div style={{ marginRight: "40rem" }}>
-            <h2>Welcome, {username}</h2>
-            <p className={styles.score}>Score: {score}</p>
+          <div className={styles.user}>
+            <h3>Welcome, {username}</h3>
+            <p>Score: {score}</p>
           </div>
-          <div
-            style={{
-              marginLeft: "40rem",
-              position: "relative",
-              bottom: "5.6rem",
-            }}
-          >
+          <div className={styles.opponent}>
             <h3>Opponent: {opponentUsername}</h3>
             <h3>Opponent's Score: {opponentScore}</h3>
           </div>
