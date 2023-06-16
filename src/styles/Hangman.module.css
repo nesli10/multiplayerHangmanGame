@@ -38,13 +38,17 @@
 }
 @media screen and (max-width: 859px) {
   .restart_button {
-    margin-left: 0.5rem;
+    margin-left: 3rem;
   }
   .hangman_container {
-    margin-left: 4rem;
+    margin-left: 3rem;
   }
   .word_display {
     margin-left: 3rem;
+  }
+  .button_container {
+    position: relative;
+    right: 0.5rem;
   }
 }
 
@@ -98,16 +102,17 @@
 .opponent {
   margin-left: 40rem;
   position: relative;
+  font-size: 1.2rem;
   bottom: 5.6rem;
 }
 @media screen and (max-width: 859px) {
   .user {
     margin-right: 20rem;
-    font-size: 12px;
+    font-size: 15px;
   }
   .opponent {
     margin-left: 19rem;
-    bottom: 6rem;
+    bottom: 6.5rem;
     font-size: 12px;
     position: relative;
   }
