@@ -74,7 +74,7 @@ const Game = () => {
       } else if (result === "lose") {
         alert("Maalesef, oyunu kaybettiniz. Doğru kelime: " + word);
       } else if (result === "draw") {
-        alert("Oyun berabere sonuçlandı.");
+        alert("Oyun berabere sonuçlandı. Doğru kelime: " + word);
       }
     });
   }
